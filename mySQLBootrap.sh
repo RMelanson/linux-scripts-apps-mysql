@@ -22,8 +22,6 @@ gitRepo="linux-scripts-apps-mysql.git"
 #installDir="/tmp/scripts/apps/JBOSS"
 installDir="/tmp/scripts/apps/mySQL"
 
-
-
 if [ -f ~/.ssh/gitHub.key ]; then
    clone="git clone git@github.com:jasonantao/"
 else
@@ -41,7 +39,6 @@ cd $installDir
 find . -name "*.sh" -exec chmod 700 {} \;
 
 # Setup Project
-./setup
+./setup 2>&1| tee setup.log
 
 cd $sqlCurrDir
-
