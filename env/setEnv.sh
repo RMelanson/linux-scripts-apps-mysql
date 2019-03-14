@@ -1,4 +1,6 @@
-# WILDFLY CONFIGURATION PARAMETERS
+#!/bin/bash
+
+# MYSQL WEB CONFIGURATION PARAMETERS
 pkg=mySql
 mySqlAdmin=admin
 mySqlOwner=mySql
