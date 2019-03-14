@@ -11,6 +11,9 @@ if [ "$EUID" -ne 0 ]
   exit -1
 fi
 
+# SETUP ENVIRONMENT AND PARAMETERS
+. ./env/setEnv.sh
+
 #Creating directory for WordPress Installation.
 mkdir $wpCurrDir/var/www/html/
 cd /etc
