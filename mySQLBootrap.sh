@@ -16,11 +16,8 @@ yum update -y
 yum install git -y
 yum install mysql-server -y
 
-#Set Cloning Properties
-pkg=mySQL
-gitRepo="linux-scripts-apps-mysql.git"
-#installDir="/tmp/scripts/apps/JBOSS"
-installDir="/tmp/scripts/apps/mySQL"
+# SETUP ENVIRONMENT AND PARAMETERS
+. ./env/setEnv.sh
 
 if [ -f ~/.ssh/gitHub.key ]; then
    clone="git clone git@github.com:jasonantao/"
