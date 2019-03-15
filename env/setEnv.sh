@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # MYSQL WEB CONFIGURATION PARAMETERS
-pkg=mySql
+gitRepo="linux-scripts-apps-mysql.git"
+installDir="/tmp/scripts/apps/mySQL"
+pkg=mySQL
 mySqlAdmin=admin
 mySqlOwner=mySql
 mySqlGroup=mySql
