@@ -1,5 +1,4 @@
 #!/bin/bash
-wpCurrDir=$PWD
 #WARNING: TEST SCRIPT ON DEDICATED SERVER> SCRIPT IN PROGRESS AND MAY CAUSES UNINTENDED EFFECTS!
 
 #Doesn't it make sense to just do sudo su instead of the if/else statement below? Please advise.
@@ -12,7 +11,10 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # SETUP ENVIRONMENT AND PARAMETERS
-. ./env/setEnv.sh
+wpCurrDir=$PWD
+pkg=mySQL
+gitRepo="linux-scripts-apps-mysql.git"
+installDir="/tmp/scripts/apps/$pkg"
 
 #Creating directory for WordPress Installation.
 mkdir $wpCurrDir/var/www/html/
