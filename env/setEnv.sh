@@ -2,6 +2,8 @@
 
 # MYSQL WEB CONFIGURATION PARAMETERS
 pkg=mySQL
+bootstrap="mySQLBootrap.sh"
+
 gitRepo="linux-scripts-apps-mysql.git"
 installDir="/tmp/scripts/apps/$pkg"
 mySqlAdmin=admin
