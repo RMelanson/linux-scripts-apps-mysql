@@ -4,6 +4,9 @@
 # SETUP MYSQL CONFIGURATION ENVIRONMENT AND PARAMETERS
 . ./env/setEnv.sh
 
+# COPY RESTORE 
+cp $pkg_RESTORE.sh ..
+
 #Configuring MySQL for autmatic startup on reboot
 chkconfig mysqld on
 service mysqld start
