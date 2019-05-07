@@ -1,6 +1,6 @@
 #!/bin/bash
 bootstrapDir=$PWD
-bootstrap=$bootstrapDir/ZZZZZZZZZZZZZZZZ.sh
+bootstrap=$bootstrapDir/WordpressBootrap.sh
 
 # Ensure script is running under root
 if [ "$EUID" -ne 0 ]
@@ -62,3 +62,5 @@ $clone$gitRepo $wpCurrDir
 use db
 
 echo End of Script
+
+cd $bootstrapDir
