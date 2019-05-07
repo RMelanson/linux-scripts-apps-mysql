@@ -1,10 +1,8 @@
 #!/bin/bash
-#WARNING: TEST SCRIPT ON DEDICATED SERVER> SCRIPT IN PROGRESS AND MAY CAUSES UNINTENDED EFFECTS!
+bootstrapDir=$PWD
+bootstrap=$bootstrapDir/ZZZZZZZZZZZZZZZZ.sh
 
-#Doesn't it make sense to just do sudo su instead of the if/else statement below? Please advise.
-sudo su
-
-#Checking for requirement that super-user is being run, otherwise do not proceed.
+# Ensure script is running under root
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root or under sudo"
   exit -1
