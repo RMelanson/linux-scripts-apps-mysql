@@ -1,8 +1,8 @@
 #!/bin/bash
-sqlCurrDir=$PWD
+bootstrapDir=$PWD
+bootstrap=$bootstrapDir/mySQLBootrap.sh
 
 # Ensure script is running under root
-bootstrap=$webCurrDir/mySQLBootrap.sh
 if [ "$EUID" -ne 0 ]
 then
    sudo -n true 2/dev/null 2>&1
