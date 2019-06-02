@@ -1,7 +1,10 @@
 #! /bin/bash
 # INSTALL MYSQL ON LINUX WITH REMOTE ACCESS AS A SERVICE
 
-# SETUP MYSQL CONFIGURATION ENVIRONMENT AND PARAMETERS
+setupName=setup.sh:
+
+# SETUP THE ENVIRONMENT
+echo "$setupName: EXECUTING: . ./env/setEnv.sh $*"
 . ./env/setEnv.sh $*
 
 # COPY RESTORE 
